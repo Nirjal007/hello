@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distributor Dashboard - Sistema Seguro</title>
+    <link rel="stylesheet" href="css/distributor.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">Sistema Seguro</div>
+        <div class="role-badge">Distributor</div>
+        <nav>
+            <ul>
+                <li class="active"><a href="#"><i class="icon-dashboard"></i> Dashboard</a></li>
+                <li><a href="#"><i class="icon-shipments"></i> Shipments</a></li>
+                <li><a href="#"><i class="icon-tracking"></i> Tracking</a></li>
+                <li><a href="#"><i class="icon-analytics"></i> Analytics</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="main-content">
+        <header>
+            <h1>Distributor Dashboard</h1>
+            <div class="date" id="current-date"></div>
+        </header>
+        
+        <div class="stats-cards">
+            <div class="card">
+                <div class="card-icon pending"></div>
+                <div class="card-content">
+                    <h3>Pending Shipments</h3>
+                    <p id="pending-count">0</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon shipped"></div>
+                <div class="card-content">
+                    <h3>In Transit</h3>
+                    <p id="in-transit-count">0</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon delivered"></div>
+                <div class="card-content">
+                    <h3>Delivered</h3>
+                    <p id="delivered-count">0</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Pending Shipments</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Shipment ID</th>
+                            <th>Retailer</th>
+                            <th>Product</th>
+                            <th>Product ID</th>
+                            <th>Quantity</th>
+                            <th>Date Received</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="pending-shipments-table">
+                        <tr>
+                            <td colspan="7">No pending shipments at the moment.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Shipments In Transit</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Shipment ID</th>
+                            <th>Tracking Number</th>
+                            <th>Retailer</th>
+                            <th>Product</th>
+                            <th>Shipping Method</th>
+                            <th>Ship Date</th>
+                            <th>Est. Delivery</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="in-transit-shipments-table">
+                        <tr>
+                            <td colspan="8">No shipments in transit at the moment.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Process Shipment Modal -->
+    <div id="shipment-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-title">Process Shipment</h2>
+            <div id="modal-shipment-details">
+                <!-- Shipment details will be loaded here -->
+            </div>
+            <div class="form-actions">
+                <button id="save-shipment" class="btn-primary">Process Shipment</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/distributor.js"></script>
+</body>
+</html>

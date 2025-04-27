@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retailer Dashboard - Sistema Seguro</title>
+    <link rel="stylesheet" href="css/retailer.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">Sistema Seguro</div>
+        <div class="role-badge">Retailer</div>
+        <nav>
+            <ul>
+                <li class="active"><a href="#"><i class="icon-dashboard"></i> Dashboard</a></li>
+                <li><a href="#"><i class="icon-orders"></i> Orders</a></li>
+                <li><a href="#"><i class="icon-inventory"></i> Inventory</a></li>
+                <li><a href="#"><i class="icon-analytics"></i> Analytics</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="main-content">
+        <header>
+            <h1>Retailer Dashboard</h1>
+            <div class="date" id="current-date"></div>
+        </header>
+        
+        <div class="stats-cards">
+            <div class="card">
+                <div class="card-icon pending"></div>
+                <div class="card-content">
+                    <h3>Pending Orders</h3>
+                    <p id="pending-count">0</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon inprogress"></div>
+                <div class="card-content">
+                    <h3>In Progress</h3>
+                    <p id="inprogress-count">0</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon completed"></div>
+                <div class="card-content">
+                    <h3>Completed</h3>
+                    <p id="completed-count">0</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="order-section">
+            <h2>Place New Order</h2>
+            <form id="order-form" class="order-form">
+                <div class="form-group">
+                    <label for="retailer-email">Email:</label>
+                    <input type="email" id="retailer-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="product-name">Product Name:</label>
+                    <input type="text" id="product-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="product-material">Material:</label>
+                    <input type="text" id="product-material" required>                    
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" min="1" required>
+                </div>
+                <button type="submit" class="btn-primary">Place Order</button>
+            </form>
+        </div>
+        
+        <div class="order-section">
+            <h2>My Orders</h2>
+            <div class="table-container">
+                <table id="orders-table">
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Product</th>
+                            <th>Material</th>
+                            <th>Quantity</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="orders-table-body">
+                        <tr>
+                            <td colspan="6">No orders found. Place an order to get started.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/retailer.js"></script>
+</body>
+</html>

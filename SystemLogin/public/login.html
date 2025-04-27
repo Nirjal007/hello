@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supply Chain Management - Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema Seguro</h1>
+        <!-- Message display for notifications -->
+        <div id="messageContainer" class="message-container"></div>
+        
+        <form id="loginForm">
+            <!-- Email input -->
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+            </div>
+            
+            <!-- Password input -->
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+            </div>
+            
+            <!-- Role selection -->
+            <div class="input-group">
+                <label for="role">Select Role:</label>
+                <select id="role" name="role" required>
+                    <option value="Admin">Admin</option>
+                    <option value="Supplier">Supplier</option>
+                    <option value="Manufacturer">Manufacturer</option>
+                    <option value="Distributor">Distributor</option>
+                    <option value="Retailer">Retailer</option>
+                </select>
+            </div>
+            
+            <!-- Login button -->
+            <button type="submit" id="loginBtn">Login</button>
+            
+            <!-- 2FA section -->
+            <div class="two-fa-section">
+                <h3>Two-Factor Authentication</h3>
+                <p>Enhance your account security with 2FA</p>
+                
+                <!-- Enable 2FA Button -->
+                <button type="button" id="enable2FA" class="secondary-btn">Send OTP to Email</button>
+                
+                <!-- 2FA Code Input Field (Initially Hidden) -->
+                <div class="input-group" id="otpInputSection" style="display: none;">
+                    <label for="otpCode">Enter Verification Code:</label>
+                    <input type="text" id="otpCode" name="otpCode" placeholder="Enter 6-digit code">
+                    <button type="button" id="verifyOTPBtn" class="secondary-btn">Verify Code</button>
+                </div>
+            </div>
+
+            <!-- Links -->
+            <div class="links">
+                <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>

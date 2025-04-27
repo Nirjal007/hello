@@ -1,0 +1,215 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://i0.wp.com/www.texspacetoday.com/wp-content/uploads/2023/05/supply-chain-management.png?resize=780%2C470&ssl=1');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Container styling */
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 450px;
+    text-align: center;
+}
+
+/* Heading styles */
+h1 {
+    color: #333333;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Message container for notifications */
+.message-container {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    display: none;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+/* Form input group */
+.input-group {
+    margin: 15px 0;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+/* Button styles */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.secondary-btn {
+    background-color: #2196F3;
+    margin-top: 5px;
+}
+
+.secondary-btn:hover {
+    background-color: #0b7dda;
+}
+
+/* 2FA section styling */
+.two-fa-section {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    border-left: 4px solid #4CAF50;
+}
+
+.two-fa-section h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* Link styling */
+.links {
+    margin-top: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+/* Message container styling */
+.message-container {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    display: none;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+/* 2FA section styling */
+.two-fa-section {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    border-left: 4px solid #4CAF50;
+}
+
+.two-fa-section h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.secondary-btn {
+    background-color: #2196F3;
+    margin-top: 5px;
+}
+
+.secondary-btn:hover {
+    background-color: #0b7dda;
+}
+/* Add to both CSS files */
+.message-container {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    display: none;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+/* Add to login.css */
+.two-fa-section {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    border-left: 4px solid #4CAF50;
+}
+
+.secondary-btn {
+    background-color: #2196F3;
+    margin-top: 5px;
+}
+
+.secondary-btn:hover {
+    background-color: #0b7dda;
+}
